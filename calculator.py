@@ -24,7 +24,7 @@ mp2 = FixedMortgageProduct(**params2)
 
 st.write(f'If your interest rate increased by 3%, your new monthly payment would be £{round(mp2.get_pmt()):,}.:chart_with_downwards_trend::pensive:	:point_down:')
 
-st.write(f'Alternatively, if you are unsure of how much you should borrow, please refer below.')
+st.write(**f'Alternatively, if you are unsure of how much you should borrow, please refer below.'**)
 
 payment = st.slider("How much is your monthly payment?", 100,10000,int(mp.get_pmt()),100)
 rate2 = st.slider("What is your current interest rate?", 0.01,0.1,rate,0.01)
