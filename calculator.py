@@ -12,12 +12,12 @@ params = {'pv': loan, 'rate': rate, 'nper': years}
 
 mp = FixedMortgageProduct(**params)
 
-print(f'You have taken out a loan of £{loan} at an interest rate of {round(rate*100)}% over {years} years.')
+st.write(f'You have taken out a loan of £{loan} at an interest rate of {round(rate*100)}% over {years} years.')
 
-print(f'Your monthly payment is £{round(mp.get_pmt()):,}.')
+st.write(f'Your monthly payment is £{round(mp.get_pmt()):,}.')
 
 params2 = {'pv': loan, 'rate': rate+0.03, 'nper': years}
 
 mp2 = FixedMortgageProduct(**params2)
 
-print(f'If your interest rate increased by 3%, your new monthly payment would be £{round(mp2.get_pmt()):,}.')
+st.write(f'If your interest rate increased by 3%, your new monthly payment would be £{round(mp2.get_pmt()):,}.')
