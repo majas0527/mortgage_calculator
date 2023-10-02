@@ -3,7 +3,7 @@ from mortgage_classes import FixedMortgageProduct
 
 st.title("Maja's mortgage calculator")
 
-st.write(f'Calculate your mortgageeeee :chart_with_upwards_trend::chart_with_upwards_trend::chart_with_upwards_trend::muscle::muscle::muscle::muscle::weight_lifter::weight_lifter::weight_lifter::weight_lifter:')
+st.write(f'Calculate your mortgageeeee :chart_with_upwards_trend::chart_with_upwards_trend::chart_with_upwards_trend::muscle::muscle::muscle::muscle::muscle::weight_lifter::weight_lifter::weight_lifter::weight_lifter:')
 
 loan = st.slider("How much are you borrowing?", 10000, 500000,20000,1000)
 rate = st.slider("What is your interest rate?", 0.01, 0.1,0.03,0.01)
