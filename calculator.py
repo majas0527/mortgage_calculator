@@ -3,6 +3,8 @@ from mortgage_classes import FixedMortgageProduct
 
 st.title("Maja's mortgage calculator")
 
+st.write(f'Calculate your mortgage! :chart_with_upwards_trend::chart_with_upwards_trend::chart_with_upwards_trend::muscle::muscle::weight_lifter::weight_lifter::weight_lifter::weight_lifter:')
+
 loan = st.slider("How much are you borrowing?", 10000, 500000,20000,1000)
 rate = st.slider("What is your interest rate?", 0.01, 0.1,0.03,0.01)
 years = st.slider("How many years will it take to pay back your mortgage?", 5, 40,10)
@@ -14,7 +16,7 @@ mp = FixedMortgageProduct(**params)
 
 st.write(f'You have taken out a loan of £{loan} at an interest rate of {round(rate*100)}% over {years} years.')
 
-st.write(f'Your monthly payment is £{round(mp.get_pmt()):,}.')
+st.write(f'Your monthly payment is £{round(mp.get_pmt()):,}. :money_with_wings::money_with_wings::money_with_wings::money_with_wings:')
 
 params2 = {'pv': loan, 'rate': rate+0.03, 'nper': years}
 
