@@ -25,7 +25,7 @@ st.write(f'If your interest rate increased by 3%, your new monthly payment would
 st.write(f'Alternatively, if you are unsure of how much you should borrow, please refer below.')
 
 payment = st.slider("How much is your monthly payment?", 100,10000,int(mp.get_pmt()),100)
-rate = st.slider("What is your current interest rate?", 0.01,0.1,mp.get_rate(),0.01)
+rate = st.slider("What is your current interest rate?", 0.01,0.1,float(mp.get_rate()),0.01)
 years = st.slider("In how many years will you be able to pay back your mortgage?", 5,40,mp.get_nper())
 
 params3 = {'pmt': payment, 'rate': rate, 'nper': years}
