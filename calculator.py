@@ -25,7 +25,7 @@ st.write(f'If your interest rate increased by 3%, your new monthly payment would
 
 
 
-payment = st.slider("How much is your monthly payment?", 50,1000,200,10)
+payment = st.slider("How much is your monthly payment?", 1000,10000,2000,100)
 rate = st.slider("What is your current interest rate?", 0.01,0.1,0.03,0.01)
 years = st.slider("In how many years will you be able to pay back your mortgage?", 5,40,10)
 
