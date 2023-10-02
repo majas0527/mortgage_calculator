@@ -22,7 +22,7 @@ params2 = {'pv': loan, 'rate': rate+0.03, 'nper': years}
 
 mp2 = FixedMortgageProduct(**params2)
 
-st.write(f'If your interest rate increased by 3%, your new monthly payment would be £{round(mp2.get_pmt()):,}.')
+st.write(f'If your interest rate increased by 3%, your new monthly payment would be £{round(mp2.get_pmt()):,}.:chart_with_downwards_trend::pensive:	:point_down:')
 
 st.write(f'Alternatively, if you are unsure of how much you should borrow, please refer below.')
 
