@@ -4,7 +4,7 @@ from mortgage_classes import FixedMortgageProduct
 st.title("Maja's mortgage calculator")
 
 loan = st.slider("How much are you borrowing?", 10000, 500000,20000,1000)
-rate = st.slider("What is your interest rate", 0.01, 0.1,0.03,0.01)
+rate = st.slider("What is your interest rate?", 0.01, 0.1,0.03,0.01)
 years = st.slider("How many years will it take to pay back your mortgage?", 5, 40,10)
 
 
