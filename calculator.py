@@ -16,7 +16,7 @@ mp = FixedMortgageProduct(**params)
 
 st.write(f'You have taken out a loan of £{loan} at an interest rate of {round(rate*100)}% over {years} years.')
 
-st.write(f'	:moneybag::moneybag::heavy_dollar_sign: Your monthly payment is £{round(mp.get_pmt()):,}. :money_with_wings::money_with_wings::money_with_wings::money_with_wings:')
+st.write(f'	:moneybag::moneybag: Your monthly payment is £{round(mp.get_pmt()):,}. :money_with_wings::money_with_wings::money_with_wings::money_with_wings:')
 
 params2 = {'pv': loan, 'rate': rate+0.03, 'nper': years}
 
